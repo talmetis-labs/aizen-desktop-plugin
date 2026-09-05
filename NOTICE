@@ -1,0 +1,27 @@
+Aizen Desktop
+Copyright 2026 The Aizen authors
+
+Required Notice: Copyright 2026 The Aizen authors (https://github.com/aizen-stack)
+
+This product is licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE).
+Commercial use requires a separate licence from the authors.
+
+---
+
+This application is a front-end for the `aizen` command-line agent
+(https://github.com/aizen-stack/aizen), which is distributed separately under the Apache
+License 2.0. This repository does not bundle, redistribute, or modify that binary — it drives
+the copy already installed on the user's machine.
+
+"Aizen" and the Aizen logo are trademarks of the Aizen authors. Neither this licence nor the
+core's Apache-2.0 licence grants trademark rights; a fork must not present itself as Aizen.
+
+---
+
+The visual design tokens in `src/styles/tokens.css` and the icon set in `src/lib/icons.ts` are
+transcribed from the "Aizen desktop interface design" project authored for this product.
+
+The Aizen symbol in `src/lib/Mark.svelte` and `scripts/make-source-icon.ps1` is redrawn as
+geometry from the supplied `aizen-logo-symbol-transparent.gif`. The source file itself is not
+redistributed here: it is solid white, so it would be invisible on the light theme, and at
+825 kB it is many times the size of the entire application bundle.
