@@ -17,8 +17,10 @@
 set -eu
 
 repo="talmetis-labs/aizen-desktop-plugin"
-license_api="${AIZEN_LICENSE_API:-https://api.aizen.sh}"; license_api="${license_api%/}"
-account_site="${AIZEN_ACCOUNT_URL:-https://aizen.sh}"; account_site="${account_site%/}"
+# Subscriptions live on aizen.talmetis.com, NOT api.talmetis.com — the latter is the model gateway,
+# serves only /v1/, and knows nothing about who bought what. An /auth/ route sent there is a bare 404.
+license_api="${AIZEN_LICENSE_API:-https://aizen.talmetis.com}"; license_api="${license_api%/}"
+account_site="${AIZEN_ACCOUNT_URL:-https://aizen.talmetis.com}"; account_site="${account_site%/}"
 aizen_home="${AIZEN_HOME:-$HOME/.aizen}"
 license_dir="$aizen_home/desktop"
 license_path="$license_dir/license.json"

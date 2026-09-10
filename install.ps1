@@ -24,10 +24,13 @@ $Suffix = 'windows-x86_64.exe'
 $Dir    = if ($env:AIZEN_INSTALL) { $env:AIZEN_INSTALL } else { Join-Path $env:LOCALAPPDATA 'Aizen' }
 
 # Where the licence server lives, and where a person buys/manages a plan. Overridable so pointing at
-# staging is an env var, not an edit. These default to the values compiled into the app; set
-# AIZEN_LICENSE_API to your production licence host if it differs.
-$LicenseApi  = if ($env:AIZEN_LICENSE_API) { $env:AIZEN_LICENSE_API.TrimEnd('/') } else { 'https://api.aizen.sh' }
-$AccountSite = if ($env:AIZEN_ACCOUNT_URL) { $env:AIZEN_ACCOUNT_URL.TrimEnd('/') } else { 'https://aizen.sh' }
+# staging is an env var, not an edit. These default to the values compiled into the app.
+#
+# Note the host: subscriptions live on aizen.talmetis.com, NOT on api.talmetis.com. The latter is the
+# model gateway; it serves only /v1/ and knows nothing about who bought what, so an /auth/ route sent
+# there is a bare 404 rather than anything that names the mistake.
+$LicenseApi  = if ($env:AIZEN_LICENSE_API) { $env:AIZEN_LICENSE_API.TrimEnd('/') } else { 'https://aizen.talmetis.com' }
+$AccountSite = if ($env:AIZEN_ACCOUNT_URL) { $env:AIZEN_ACCOUNT_URL.TrimEnd('/') } else { 'https://aizen.talmetis.com' }
 
 # ~/.aizen, the config home the app and core share. AIZEN_HOME overrides it, same as the app.
 $AizenHome  = if ($env:AIZEN_HOME) { $env:AIZEN_HOME } else { Join-Path $env:USERPROFILE '.aizen' }

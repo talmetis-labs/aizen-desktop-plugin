@@ -2,7 +2,7 @@
 
 # Aizen Desktop
 
-**Lớp giao diện desktop cho [aizen](https://github.com/aizen-stack/aizen) — Tauri v2 · Svelte 5 · không Electron.**
+**Lớp giao diện desktop cho [aizen](https://github.com/talmetis-labs/aizen) — Tauri v2 · Svelte 5 · không Electron.**
 
 </div>
 
@@ -17,7 +17,7 @@ binary `aizen` bạn đã cài và dùng chính nó.
 ## Cài
 
 Gói cài có bản quyền: **trình cài xác nhận tài khoản đã mua rồi mới tải**. Chưa có gói thì mua tại
-[aizen.sh](https://aizen.sh).
+[aizen.talmetis.com](https://aizen.talmetis.com).
 
 ```powershell
 # Windows (PowerShell)
@@ -34,7 +34,7 @@ Trình cài mở trình duyệt để bạn xác nhận mua hàng (device-code),
 
 ### Yêu cầu
 
-- **`aizen` CLI** — engine mà app điều khiển. Cài trước: `irm https://raw.githubusercontent.com/aizen-stack/aizen/main/install.ps1 | iex` (Windows) hoặc bản `install.sh` tương ứng.
+- **`aizen` CLI** — engine mà app điều khiển. Cài trước: `irm https://raw.githubusercontent.com/talmetis-labs/aizen/main/install.ps1 | iex` (Windows) hoặc bản `install.sh` tương ứng.
 - **Windows:** WebView2 Evergreen Runtime (có sẵn trên Windows 11 và mọi máy có Edge).
 - **Linux:** `libwebkit2gtk-4.1`.
 - **macOS:** Apple Silicon (arm64).
@@ -47,4 +47,4 @@ App tự kiểm bản mới từ trang Releases của repo này. Gỡ: xoá `aiz
 ## Bản quyền
 
 Xem [LICENSE](LICENSE). Quyền sử dụng gói cài gắn với tài khoản đã mua; quản lý gói tại
-[aizen.sh](https://aizen.sh).
+[aizen.talmetis.com](https://aizen.talmetis.com).
