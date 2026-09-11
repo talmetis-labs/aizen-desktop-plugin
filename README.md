@@ -60,7 +60,13 @@ Every release ships the same set of files; pick one from the
 Each platform has a `SHA256SUMS-<platform>.txt` beside its files. Verify before you run:
 
 ```bash
+# Linux / macOS
 shasum -a 256 -c SHA256SUMS-linux-x86_64.txt
+```
+
+```powershell
+# Windows — compare with the line in SHA256SUMS-windows-x86_64.txt (letter case does not matter)
+(Get-FileHash aizen-desktop-<tag>-windows-x86_64.exe).Hash
 ```
 
 Builds are not yet code-signed. Windows SmartScreen and macOS Gatekeeper may ask you to confirm
