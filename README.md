@@ -16,8 +16,8 @@ binary `aizen` bạn đã cài và dùng chính nó.
 
 ## Cài
 
-Gói cài có bản quyền: **trình cài xác nhận tài khoản đã mua rồi mới tải**. Chưa có gói thì mua tại
-[aizen.talmetis.com](https://aizen.talmetis.com).
+Tải thì mở, dùng thì kiểm: trình cài chỉ tải. Lần mở đầu tiên, app yêu cầu đăng nhập tài khoản
+Aizen **đang sở hữu plugin Aizen Desktop** — mua tại [aizen.talmetis.com](https://aizen.talmetis.com).
 
 ```powershell
 # Windows (PowerShell)
@@ -29,8 +29,9 @@ irm https://raw.githubusercontent.com/talmetis-labs/aizen-desktop-plugin/main/in
 curl -fsSL https://raw.githubusercontent.com/talmetis-labs/aizen-desktop-plugin/main/install.sh | sh
 ```
 
-Trình cài mở trình duyệt để bạn xác nhận mua hàng (device-code), sau đó tải **một file** đặt cạnh
-`aizen`, kích hoạt sẵn licence trên máy, và tạo shortcut. Không toolchain, không Node, không Rust.
+Trình cài tải **một file** đặt cạnh `aizen` và tạo shortcut. Không toolchain, không Node, không
+Rust. Giấy phép được cấp cho máy này khi bạn đăng nhập trong app — ký bởi máy chủ, ràng với máy,
+dùng được 7 ngày không cần mạng.
 
 ### Yêu cầu
 
